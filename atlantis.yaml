@@ -1,7 +1,7 @@
 version: 3
 projects:
 - name: instance1
-    dir: ./
+    dir: .
     workflow: prod
     autoplan:
     when_modified: ["modules/**/*.tf","*.tf"]
