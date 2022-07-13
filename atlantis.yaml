@@ -4,11 +4,11 @@ delete_source_branch_on_merge: true
 parallel_plan: true
 parallel_apply: true
 projects:
-- name: netology
-  dir: workspaces
-    workspace: stage
-  dir: workspaces
-    workspace: prod
+#- name: netology
+- dir: .
+  workspace: stage
+- dir: .
+  workspace: prod
   autoplan:
     when_modified: ["*.tf", "../modules/**/*.tf"]
     enabled: true
