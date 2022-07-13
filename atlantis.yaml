@@ -5,10 +5,10 @@ parallel_plan: true
 parallel_apply: true
 projects:
 - name: netology
-- dir: workspaces
-  workspace: stage
-- dir: workspaces
-  workspace: prod
+  dir: workspaces
+    workspace: stage
+  dir: workspaces
+    workspace: prod
   autoplan:
     when_modified: ["*.tf", "../modules/**/*.tf"]
     enabled: true
