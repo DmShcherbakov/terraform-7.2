@@ -6,6 +6,9 @@ parallel_apply: true
 projects:
 - dir: .
   workspace: stage
+  autoplan:
+    when_modified: ["*.tf", "../**/*.tf"]
+    enabled: true
 - dir: .
   workspace: prod
   autoplan:
