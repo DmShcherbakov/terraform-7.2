@@ -12,9 +12,9 @@ projects:
     when_modified: ["*.tf", "../**/*.tf"]
     enabled: true
 
-# workflow: default
+ workflow: default
 
-#  apply_requirements: [mergeable]
+  apply_requirements: [mergeable]
 #  workflow: myworkflow
 #workflows:
 #  myworkflow:
