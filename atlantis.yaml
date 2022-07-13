@@ -14,3 +14,4 @@ projects:
   autoplan:
     when_modified: ["*.tf", "../**/*.tf"]
     enabled: true
+
