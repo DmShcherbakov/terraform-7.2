@@ -6,13 +6,13 @@ parallel_apply: true
 projects:
 - name: netology
   dir: .
-  workspace: default
-#  terraform_version: v0.11.0
+  workspace: stage
+  dir: .
+  workspace: prod
   autoplan:
     when_modified: ["*.tf", "../modules/**/*.tf"]
     enabled: true
   apply_requirements: [mergeable]
-#  apply_requirements: [mergeable, approved]
   workflow: myworkflow
 workflows:
   myworkflow:
@@ -24,6 +24,3 @@ workflows:
       steps:
       - run: echo hi
       - apply
-#allowed_regexp_prefixes:
-#- dev/
-#- staging/
