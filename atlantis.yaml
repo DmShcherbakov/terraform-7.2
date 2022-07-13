@@ -18,8 +18,6 @@ workflows:
     plan:
       steps:
       - init
-      - plan:
-          extra_args: ["-lock", "false"]
     apply:
       steps:
       - run: echo hi
