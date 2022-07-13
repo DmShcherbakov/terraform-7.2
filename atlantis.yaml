@@ -12,6 +12,8 @@ projects:
   autoplan:
     when_modified: ["*.tf", "../**/*.tf"]
     enabled: true
+  workflow: default
+
 #  apply_requirements: [mergeable]
 #  workflow: myworkflow
 #workflows:
