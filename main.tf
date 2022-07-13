@@ -19,9 +19,9 @@ resource "yandex_compute_image" "ubuntu-image" {
 }
 
 resource "yandex_compute_instance" "vm-1" {
-  name = "terraform7.4-atl"
+  name = "tf-atl"
   description = "First test instance"
-  hostname = "vm-1"
+  hostname = "vm1"
   resources {
     cores         = 2
     memory        = 2
