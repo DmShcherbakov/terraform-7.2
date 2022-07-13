@@ -13,9 +13,9 @@ projects:
     enabled: true
 
   apply_requirements: [mergeable]
-  workflow: default
+  workflow: mywf
 workflows:
-  default:
+  mywf:
     plan:
       steps:
       - init
