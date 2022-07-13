@@ -1,4 +1,4 @@
-ersion: 3
+version: 3
 automerge: true
 delete_source_branch_on_merge: true
 parallel_plan: true
