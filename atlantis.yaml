@@ -12,17 +12,15 @@ projects:
     when_modified: ["*.tf", "../**/*.tf"]
     enabled: true
 
- workflow: default
-
   apply_requirements: [mergeable]
-#  workflow: myworkflow
-#workflows:
-#  myworkflow:
-#    plan:
-#      steps:
-#      - init
-#      - plan
-#    apply:
-#      steps:
-#      - run: echo hi
-#      - apply
+  workflow: default
+workflows:
+  default:
+    plan:
+      steps:
+      - init
+      - plan
+    apply:
+      steps:
+      - run: echo hi
+      - apply
