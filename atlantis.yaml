@@ -16,14 +16,14 @@ projects:
     enabled: true
 
   apply_requirements: [mergeable]
-  workflow: mywf
-workflows:
-  mywf:
-    plan:
-      steps:
-      - init
-      - plan
-    apply:
-      steps:
-      - run: echo hi
-      - apply
+#  workflow: mywf
+#workflows:
+#  mywf:
+#    plan:
+#      steps:
+#      - init
+#      - plan
+#    apply:
+#      steps:
+#      - run: echo hi
+#      - apply
