@@ -19,7 +19,7 @@ resource "yandex_compute_image" "ubuntu-image" {
 }
 
 resource "yandex_compute_instance" "vm-1" {
-  name = "tf-atl1"
+  name = "tf-atl"
   description = "First test instance"
   hostname = "vm1"
   resources {
