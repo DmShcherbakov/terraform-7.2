@@ -13,6 +13,7 @@ projects:
     enabled: true
 
   apply_requirements: [mergeable]
+
 #  workflow: mywf
 #workflows:
 #  mywf:
